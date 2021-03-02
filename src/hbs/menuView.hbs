@@ -1,0 +1,9 @@
+<nav>
+    <ul>
+        {{#each this.pages}}
+        {{!-- onclick ="switchPage('{{@key}}')" --}}
+
+        <li data-page="{{@key}}" class="{{#if isActive}}active-page{{/if}}">{{menu}}</li>
+        {{/each}}
+    </ul>
+</nav>

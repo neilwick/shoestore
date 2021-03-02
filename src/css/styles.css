@@ -1,0 +1,86 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  background-color: darkblue;
+  padding: .2em .2em .2em .5em;
+}
+
+main>h1 {
+  color: darkblue;
+  background-color: white;
+  border-bottom: darkblue 2px solid;
+  padding-left: 0;
+}
+
+.shoe>.thumbnail {
+  width: 200px;
+  text-align: center;
+}
+
+#shoeslisting {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#shoeslisting>div {
+  display: inline-block;
+  border: 1px blue solid;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em .5em;
+}
+
+#shoeslisting h2 {
+  font-size: 1em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main {
+  display: block;
+  grid-template-columns: 1fr 1fr;
+}
+
+.active-page {
+  font-weight: bold;
+}
+
+.site-link {
+  text-decoration: underline;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.site-link:hover {
+  color: cyan;
+}
+
+footer {
+  width: 100%;
+  color: lightblue;
+  background-color: darkblue;
+  margin-top: 1em;
+  height: 1.5em;
+  padding: .5em;
+}
+
+nav ul {
+  padding-left: 0;
+}
+
+nav li {
+  text-decoration: none;
+  display: inline-block;
+  padding: .5em;
+  margin: .5em 0.25;
+  border: 1px darkblue solid;
+  border-radius: 2em;
+}
+
+nav>ul>li.active-page {
+  color: white;
+  background-color: darkblue;
+}
