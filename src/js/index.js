@@ -21,8 +21,6 @@ let shoesPromise = fetch("api/shoes.json").then(function (resp) {
     return resp.json();
 });
 
-
-
 Promise.all([pagesPromise, shoesPromise]).then(result => {
     // console.log(result);
     menu = new MenuController(result[0], main, nav, component,
@@ -33,8 +31,6 @@ Promise.all([pagesPromise, shoesPromise]).then(result => {
     render(result[1]);
     // console.log(menu.getMenu());
 });
-
-
 
 let render = function (shoes) {
 
