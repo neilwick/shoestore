@@ -1,6 +1,6 @@
 # ex-handlebars
 
-Empty project.
+Shoe store demo
 
 ## Building and running on localhost
 
